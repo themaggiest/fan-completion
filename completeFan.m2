@@ -32,7 +32,6 @@ for i from 0 to m do (
 if isMember(sort(toList(intersect(s, t))), L2) == false then continue; 
 
 sgn = sum flatten entries (transpose(u)*B);
-print sgn;
 if sgn == 0 then continue;
 if sgn > 0 then (
 	pF = addCone(coneFromVData(M_(L1#j)), pF);
