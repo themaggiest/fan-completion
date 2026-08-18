@@ -64,4 +64,5 @@ completeFan = F -> (
 	
 	-- create the fan
 	cF = fan cL;
+	return cF;
 );
