@@ -56,5 +56,5 @@ cL = append(cL, ncL#i);
 );
 
 -- create the fan
-cF = fan ucL;
+cF = fan cL;
 );
