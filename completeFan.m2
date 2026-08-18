@@ -1,4 +1,4 @@
-completeFan = F -> (
+completeFan = T -> (
 	--returns a completed fan from a tropical variety
 
 	--construct fan from tropical variety and get its rays
