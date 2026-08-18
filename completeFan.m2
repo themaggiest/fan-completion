@@ -61,8 +61,17 @@ completeFan = T -> (
 	cL = append(cL, pcL#i);
 	cL = append(cL, ncL#i);
 	);
+
+	-- remove duplicate cones
+	ucL = {};
 	
+	for c in cL do (
+		if not any(ucL, d -> rays(c) == rays(d)) then (
+			ucL = append(ucL, c);
+		);
+	);
+
 	-- create the fan
-	cF = fan ucL;
+	cF = fan cL;
 	return cF;
 );
